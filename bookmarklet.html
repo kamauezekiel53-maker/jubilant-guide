@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MP3Juice Bookmarklet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { background: #0d0d0d; color: #f0f0f0; margin: 0; font-family: Arial; }
+.container { max-width: 800px; margin: 50px auto; width: 90%; }
+h1 { text-align: center; font-size: 2.4rem; color: #0ff; }
+.instructions { margin-top: 20px; line-height: 1.7; }
+.code-box { margin-top: 20px; padding: 20px; background: #111; border-radius: 8px; font-family: monospace; }
+a { color: #0ff; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>MP3Juice Bookmarklet</h1>
+
+<div class="instructions">
+<p>Drag the bookmarklet below to your bookmarks bar. When you’re watching any video, click the bookmark to convert it instantly.</p>
+</div>
+
+<div class="code-box">
+javascript:(function(){window.location="https://mp3juice.srv/convert?url="+encodeURIComponent(location.href);})();
+</div>
+
+<p><a href="index.html">Back to Home</a></p>
+</div>
+</body>
+</html>
