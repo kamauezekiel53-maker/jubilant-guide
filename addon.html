@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MP3Juice Add-On</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { background: #000; color: #eee; margin: 0; font-family: Arial; }
+.container { width: 90%; max-width: 800px; margin: 50px auto; }
+h1 { text-align: center; font-size: 2.4rem; color: #0ff; }
+p { line-height: 1.6; }
+.code-box {
+background: #111;
+padding: 20px;
+border-radius: 8px;
+margin-top: 20px;
+font-family: monospace;
+}
+a { color: #0ff; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>MP3Juice Browser Add-On</h1>
+
+<p>Install our browser add-on to convert videos or audio links instantly without visiting the website.</p>
+
+<h2>How to Install</h2>
+<p>Copy and paste the following script into your browser’s bookmark bar:</p>
+
+<div class="code-box">
+javascript:(function(){window.location="https://mp3juice.srv/convert?url="+encodeURIComponent(location.href);})();
+</div>
+
+<p>Now, when you are on any video page, click the bookmark to convert it instantly.</p>
+
+<p><a href="index.html">Back to Home</a></p>
+</div>
+</body>
+</html>
